@@ -1,9 +1,10 @@
-function caculateTotalCost(price, quantity, taxRate) {
-    let totalCost = (price * quantity) * (1 + taxRate);
+function caculateTotalCost(price, quantity, taxRate,discount) {
+    let totalCost = (price * quantity) * (1 + taxRate) (discount / price );
 return totalCost;
 }
 
 console.log(caculateTotalCost(10,14,1))
+
 
 function checkEligibility(age, isEmployed){
     if (age <= 18){
